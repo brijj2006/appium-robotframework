@@ -9,7 +9,7 @@ Test Setup          Reset App
 
 *** Test Cases ***
 Application_Test
-    [Documentation]             Test Case to understand robotFramework with appium
+    [Documentation]             Go to iPhone Settings app > SignIn to iPhone > Enter Apple ID > Cancel and return to Settings app
 
     verify homepage
     Swipe                       ${startx}   ${starty}   ${endX}   ${endY}
