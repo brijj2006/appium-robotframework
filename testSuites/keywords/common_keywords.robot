@@ -1,6 +1,6 @@
 *** Settings ***
 #Importing all the resource files
-Resource    ../../settings/resource.txt
+Resource    ../../settings/resource.robot
 
 #Common keywords that can be reused in the testSuites
 *** Keywords ***

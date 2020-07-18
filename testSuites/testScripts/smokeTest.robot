@@ -1,6 +1,6 @@
 *** Settings ***
 #Importing all the resource files
-Resource    ../../settings/resource.txt
+Resource    ../../settings/resource.robot
 
 #Setting up Suite and Test Setup/Teardown
 Suite Setup         Open App

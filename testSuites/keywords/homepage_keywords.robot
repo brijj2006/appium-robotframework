@@ -1,6 +1,6 @@
 *** Settings ***
 #Importing all the resource files
-Resource    ../../settings/resource.txt
+Resource    ../../settings/resource.robot
 
 #keywords related to the homepage of the application
 *** Keywords ***

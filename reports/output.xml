@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.1 (Python 3.8.4 on darwin)" generated="20200718 18:11:23.561" rpa="false">
-<suite id="s1" name="smokeTest" source="/Users/NehaBisht/Documents/Brijendra_Home/lab/appium-robotframework/testSuites/testScripts/smokeTest.txt">
+<robot generator="Robot 3.2.1 (Python 3.8.4 on darwin)" generated="20200718 18:29:57.330" rpa="false">
+<suite id="s1" name="smokeTest" source="/Users/NehaBisht/Documents/Brijendra_Home/lab/appium-robotframework/testSuites/testScripts/smokeTest.robot">
 <kw name="Open App" library="common_keywords" type="setup">
 <kw name="Open Application" library="AppiumLibrary">
 <doc>Opens a new application to given Appium server.
@@ -17,17 +17,17 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>udid=${udid}</arg>
 <arg>platformVersion=${platform_version}</arg>
 </arguments>
-<status status="PASS" starttime="20200718 18:11:24.659" endtime="20200718 18:12:14.933"></status>
+<status status="PASS" starttime="20200718 18:29:58.907" endtime="20200718 18:30:58.414"></status>
 </kw>
-<status status="PASS" starttime="20200718 18:11:24.658" endtime="20200718 18:12:14.945"></status>
+<status status="PASS" starttime="20200718 18:29:58.906" endtime="20200718 18:30:58.416"></status>
 </kw>
 <test id="s1-t1" name="Application_Test">
 <kw name="Reset App" library="common_keywords" type="setup">
 <kw name="Reset Application" library="AppiumLibrary">
 <doc>Reset application. Open Application can be reset while Appium session is kept alive.</doc>
-<status status="PASS" starttime="20200718 18:12:14.963" endtime="20200718 18:12:22.296"></status>
+<status status="PASS" starttime="20200718 18:30:58.423" endtime="20200718 18:31:05.428"></status>
 </kw>
-<status status="PASS" starttime="20200718 18:12:14.954" endtime="20200718 18:12:22.296"></status>
+<status status="PASS" starttime="20200718 18:30:58.421" endtime="20200718 18:31:05.428"></status>
 </kw>
 <kw name="verify homepage" library="homepage_keywords">
 <kw name="Wait Until Page Contains" library="AppiumLibrary">
@@ -35,9 +35,9 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arguments>
 <arg>${sign-in_text}</arg>
 </arguments>
-<status status="PASS" starttime="20200718 18:12:22.298" endtime="20200718 18:12:26.319"></status>
+<status status="PASS" starttime="20200718 18:31:05.430" endtime="20200718 18:31:09.766"></status>
 </kw>
-<status status="PASS" starttime="20200718 18:12:22.297" endtime="20200718 18:12:26.320"></status>
+<status status="PASS" starttime="20200718 18:31:05.429" endtime="20200718 18:31:09.766"></status>
 </kw>
 <kw name="Swipe" library="AppiumLibrary">
 <doc>Swipe from one point to another point, for an optional duration.</doc>
@@ -47,39 +47,39 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>${endX}</arg>
 <arg>${endY}</arg>
 </arguments>
-<status status="PASS" starttime="20200718 18:12:26.320" endtime="20200718 18:12:27.539"></status>
+<status status="PASS" starttime="20200718 18:31:09.767" endtime="20200718 18:31:10.987"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="AppiumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20200718 18:12:27.768" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200718 18:12:27.539" endtime="20200718 18:12:27.769"></status>
+<msg timestamp="20200718 18:31:11.195" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200718 18:31:10.987" endtime="20200718 18:31:11.195"></status>
 </kw>
 <kw name="Click Text" library="AppiumLibrary">
 <doc>Click text identified by ``text``.</doc>
 <arguments>
 <arg>${sign-in_text}</arg>
 </arguments>
-<status status="PASS" starttime="20200718 18:12:27.773" endtime="20200718 18:12:29.398"></status>
+<status status="PASS" starttime="20200718 18:31:11.196" endtime="20200718 18:31:12.793"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="AppiumLibrary">
 <doc>Waits until `text` appears on current page.</doc>
 <arguments>
 <arg>${sign-in_header_text}</arg>
 </arguments>
-<status status="PASS" starttime="20200718 18:12:29.399" endtime="20200718 18:12:31.706"></status>
+<status status="PASS" starttime="20200718 18:31:12.794" endtime="20200718 18:31:15.244"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="AppiumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20200718 18:12:31.842" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-2.png"&gt;&lt;img src="appium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200718 18:12:31.707" endtime="20200718 18:12:31.842"></status>
+<msg timestamp="20200718 18:31:15.360" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-2.png"&gt;&lt;img src="appium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200718 18:31:15.244" endtime="20200718 18:31:15.360"></status>
 </kw>
 <kw name="Clear Text" library="AppiumLibrary">
 <doc>Clears the text field identified by `locator`.</doc>
 <arguments>
 <arg>${apple-id_text-field}</arg>
 </arguments>
-<msg timestamp="20200718 18:12:31.847" level="INFO">Clear text field 'identifier=username-field'</msg>
-<status status="PASS" starttime="20200718 18:12:31.843" endtime="20200718 18:12:33.063"></status>
+<msg timestamp="20200718 18:31:15.362" level="INFO">Clear text field 'identifier=username-field'</msg>
+<status status="PASS" starttime="20200718 18:31:15.360" endtime="20200718 18:31:16.774"></status>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -87,27 +87,27 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>${apple-id_text-field}</arg>
 <arg>example@example.com</arg>
 </arguments>
-<msg timestamp="20200718 18:12:33.065" level="INFO">Typing text 'example@example.com' into text field 'identifier=username-field'</msg>
-<status status="PASS" starttime="20200718 18:12:33.063" endtime="20200718 18:12:39.172"></status>
+<msg timestamp="20200718 18:31:16.776" level="INFO">Typing text 'example@example.com' into text field 'identifier=username-field'</msg>
+<status status="PASS" starttime="20200718 18:31:16.774" endtime="20200718 18:31:22.064"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="AppiumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20200718 18:12:39.315" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-3.png"&gt;&lt;img src="appium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200718 18:12:39.173" endtime="20200718 18:12:39.315"></status>
+<msg timestamp="20200718 18:31:22.201" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-3.png"&gt;&lt;img src="appium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200718 18:31:22.065" endtime="20200718 18:31:22.201"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="AppiumLibrary">
 <doc>Waits until `text` appears on current page.</doc>
 <arguments>
 <arg>${cancel_text}</arg>
 </arguments>
-<status status="PASS" starttime="20200718 18:12:39.315" endtime="20200718 18:12:41.824"></status>
+<status status="PASS" starttime="20200718 18:31:22.202" endtime="20200718 18:31:24.758"></status>
 </kw>
 <kw name="Click Text" library="AppiumLibrary">
 <doc>Click text identified by ``text``.</doc>
 <arguments>
 <arg>${cancel_text}</arg>
 </arguments>
-<status status="PASS" starttime="20200718 18:12:41.824" endtime="20200718 18:12:43.601"></status>
+<status status="PASS" starttime="20200718 18:31:24.759" endtime="20200718 18:31:26.641"></status>
 </kw>
 <kw name="verify homepage" library="homepage_keywords">
 <kw name="Wait Until Page Contains" library="AppiumLibrary">
@@ -115,26 +115,26 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arguments>
 <arg>${sign-in_text}</arg>
 </arguments>
-<status status="PASS" starttime="20200718 18:12:43.603" endtime="20200718 18:12:47.352"></status>
+<status status="PASS" starttime="20200718 18:31:26.643" endtime="20200718 18:31:30.742"></status>
 </kw>
-<status status="PASS" starttime="20200718 18:12:43.601" endtime="20200718 18:12:47.353"></status>
+<status status="PASS" starttime="20200718 18:31:26.642" endtime="20200718 18:31:30.742"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="AppiumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20200718 18:12:47.447" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-4.png"&gt;&lt;img src="appium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200718 18:12:47.353" endtime="20200718 18:12:47.447"></status>
+<msg timestamp="20200718 18:31:30.903" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-4.png"&gt;&lt;img src="appium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200718 18:31:30.743" endtime="20200718 18:31:30.903"></status>
 </kw>
 <doc>Go to iPhone Settings app &gt; SignIn to iPhone &gt; Enter Apple ID &gt; Cancel and return to Settings app</doc>
-<status status="PASS" starttime="20200718 18:12:14.948" endtime="20200718 18:12:47.448" critical="yes"></status>
+<status status="PASS" starttime="20200718 18:30:58.417" endtime="20200718 18:31:30.903" critical="yes"></status>
 </test>
 <kw name="Close App" library="common_keywords" type="teardown">
 <kw name="Close Application" library="AppiumLibrary">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" starttime="20200718 18:12:47.452" endtime="20200718 18:12:48.523"></status>
+<status status="PASS" starttime="20200718 18:31:30.911" endtime="20200718 18:31:31.955"></status>
 </kw>
-<status status="PASS" starttime="20200718 18:12:47.452" endtime="20200718 18:12:48.523"></status>
+<status status="PASS" starttime="20200718 18:31:30.910" endtime="20200718 18:31:31.955"></status>
 </kw>
-<status status="PASS" starttime="20200718 18:11:23.566" endtime="20200718 18:12:48.523"></status>
+<status status="PASS" starttime="20200718 18:29:57.340" endtime="20200718 18:31:31.955"></status>
 </suite>
 <statistics>
 <total>

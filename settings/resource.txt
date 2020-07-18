@@ -1,6 +1,0 @@
-*** Settings ***
-#Declaring all the resource files
-Resource    ../settings/settings.txt
-Resource    ../testSuites/locators/app_locators.txt
-Resource    ../testSuites/keywords/common_keywords.txt
-Resource    ../testSuites/keywords/homepage_keywords.txt
