@@ -1,6 +1,6 @@
 # install and configure mobile automation on Mac OS
 
-## Installation of Appium and Robot Framework
+### Installation of Appium and Robot Framework
 
 The installation of Appium and Robot Framework can be done using the terminal of macOS.  
 
@@ -96,7 +96,7 @@ If all settings are correct, one can continue. If something is not set correctly
 
 Once the Appium is configured correctly, it is time to set up the certificates for Apple in Xcode. This is needed to install the XCTest runner on iOS devices, which is needed to trigger the test cases on the device.  
 
-**setting the WebDriverAgent***  
+**setting the WebDriverAgent**  
 ```
 cd /usr/local/lib/node_modules/appium/node_modules/appium-webdriveragent
 ./Scripts/bootstrap.sh -d
@@ -113,13 +113,11 @@ Navigate to Xcode and open the target WebDriverAgentLib and sign this with your 
 
 ![image](https://user-images.githubusercontent.com/50976445/87915241-73889680-caa4-11ea-8d4f-6c81c11df084.png)  
 
-
 ***WebDriverAgentRunner***  
 
 ![image](https://user-images.githubusercontent.com/50976445/87915461-ceba8900-caa4-11ea-95a1-f4c6ec7c16a0.png)  
 
-
-There might be an error in Provisioning Profile & Signing Certificate. 
+There might be an error in Provisioning Profile & Signing Certificate.  
 ***hack to resolve the error***    
 ```
 click on Build Settings
@@ -176,7 +174,7 @@ robot --outputdir ../../reports smokeTest.robot
 robot --outputdir ../../reports smokeTest_android.robot
 ```
  
-## project folder structure
+### project folder structure
 
 #### reports
 
