@@ -3,16 +3,10 @@
  
 ## steps to execute the testSuite
  
- Got to the directory where smokeTest.robot file exists on the terminal and execute the command -> 
+ Open Terminal and go to the directory where testScripts are located, then execute the command ->  
  
-#### run ios Test
-
- ***robot --outputdir ../../reports smokeTest.robot***
-
-
-#### run andriod Test
-
- ***robot --outputdir ../../reports smokeTest_android.robot***
+* run ios Test : ***robot --outputdir ../../reports smokeTest.robot***
+* run andriod Test : ***robot --outputdir ../../reports smokeTest_android.robot***
  
 ## project folder structure
 
