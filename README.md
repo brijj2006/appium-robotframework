@@ -1,5 +1,9 @@
 # appium-robotframework
  appium-robotframework integration to test ios and andriod apps
+
+## screenshot of the project structure
+
+![image](https://user-images.githubusercontent.com/50976445/87889406-0fde7900-ca64-11ea-8de4-07337e6591c6.png)
  
 ## steps to execute the testSuite
  
