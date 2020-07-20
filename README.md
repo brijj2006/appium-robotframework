@@ -67,4 +67,10 @@ robot --outputdir ../../reports smokeTest_android.robot
 ## screenshot of the project structure
 
 ![image](https://user-images.githubusercontent.com/50976445/87889533-ae6ada00-ca64-11ea-9e1f-3ea47558631f.png)
+
+## snapshot of the test run
+
+![image](https://user-images.githubusercontent.com/50976445/87890066-58e3fc80-ca67-11ea-845f-91d30cf8fdf8.png)
+
+
  
