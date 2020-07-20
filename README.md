@@ -25,8 +25,7 @@
 
 #### testSuites
 
-location : ***testSuites***  
-project keywords, locators and testScripts are defined here.
+* project keywords, locators and testScripts are defined here : ***testSuites***  
 
 #### keywords
 
@@ -35,7 +34,7 @@ project keywords, locators and testScripts are defined here.
 
 #### locators
 
-locators for identifying the elements on ios are defined here : ***testSuites/locators/app_locators.robot***  
+* locators for identifying the elements on ios are defined here : ***testSuites/locators/app_locators.robot***  
 
 #### testScripts
 
