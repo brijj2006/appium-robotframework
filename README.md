@@ -1,6 +1,23 @@
 # appium-robotframework
  appium-robotframework integration to test ios and andriod apps
  
+ ***ios test scenario :***  
+ ```
+ navigate to iPhone Settings app  
+ sign in to iPhone  
+ enter Apple ID  
+ cancel and return to Settings app  
+ perform verifications and take screenshots
+ ```
+ 
+ ***andriod test scenario :***  
+ ```
+ navigate to android Calculator app  
+ perform addition operation : 3 + 4 = 7
+ verfiy result as 7
+ perform verifications and take screenshots
+ ```
+ 
 ## steps to execute the testSuite
  
  Open Terminal and go to the directory where testScripts are located, then execute the command ->  
