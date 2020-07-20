@@ -1,9 +1,5 @@
 # appium-robotframework
  appium-robotframework integration to test ios and andriod apps
-
-## screenshot of the project structure
-
-![image](https://user-images.githubusercontent.com/50976445/87889533-ae6ada00-ca64-11ea-9e1f-3ea47558631f.png)
  
 ## steps to execute the testSuite
  
@@ -51,6 +47,7 @@ robot --outputdir ../../reports smokeTest_android.robot
 * ios test script location : ***testSuites/testScripts/smokeTest.robot***  
 * andriod test script location : ***testSuites/testScripts/smokeTest_android.robot***  
 
+## screenshot of the project structure
 
-
+![image](https://user-images.githubusercontent.com/50976445/87889533-ae6ada00-ca64-11ea-9e1f-3ea47558631f.png)
  
