@@ -5,8 +5,14 @@
  
  Open Terminal and go to the directory where testScripts are located, then execute the command ->  
  
-* run ios Test : ***robot --outputdir ../../reports smokeTest.robot***
-* run andriod Test : ***robot --outputdir ../../reports smokeTest_android.robot***
+ ***run ios test :***    
+ ```
+robot --outputdir ../../reports smokeTest.robot
+```
+***run andriod test :***  
+```
+robot --outputdir ../../reports smokeTest_android.robot
+```
  
 ## project folder structure
 
