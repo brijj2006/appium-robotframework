@@ -1,92 +1,3 @@
-# appium-robotframework
- appium-robotframework integration to test ios and andriod apps
- 
- ***ios test scenario :***  
- ```
- navigate to iPhone Settings app  
- sign in to iPhone  
- enter Apple ID  
- cancel and return to Settings app  
- perform verifications and take screenshots
- ```
- 
- ***andriod test scenario :***  
- ```
- navigate to android Calculator app  
- perform addition operation : 3 + 4 = 7
- verfiy result as 7
- perform verifications and take screenshots
- ```
- 
-## steps to execute the testSuite
- 
- Open Terminal and go to the directory where testScripts are located, then execute the command ->  
- 
- ***run ios test :***    
- ```
-robot --outputdir ../../reports smokeTest.robot
-```
-***run andriod test :***  
-```
-robot --outputdir ../../reports smokeTest_android.robot
-```
- 
-## project folder structure
-
-#### reports
-
-* location : ***reports***  
-* screenshots are saved as ***.png*** files  
-* html report is saved as ***report.html***  
-* detailed step by step log is saved as ***log.html***  
-
-#### settings
-
-* location : ***settings***
-* global varibales and libraries are defined here : ***settings/settings.robot***
-* resource files for the project are defined here : ***settings/resource.robot***
-
-#### testSuites
-
-* project keywords, locators and testScripts are defined here : ***testSuites***  
-
-#### keywords
-
-* Common keywords that can be reused in the testSuites : ***testSuites/Keywords/common_keywords.robot***  
-* application specific keywords : ***testSuites/Keywords/homepage_keywords.robot***  
-
-#### locators
-
-* locators for identifying the elements on ios are defined here : ***testSuites/locators/app_locators.robot***  
-
-#### testScripts
-
-* ios test script location : ***testSuites/testScripts/smokeTest.robot***  
-* andriod test script location : ***testSuites/testScripts/smokeTest_android.robot***  
-
-## snapshot for the project structure
-
-![image](https://user-images.githubusercontent.com/50976445/87889533-ae6ada00-ca64-11ea-9e1f-3ea47558631f.png)
-
-## snapshot of the test run
-
-![image](https://user-images.githubusercontent.com/50976445/87890066-58e3fc80-ca67-11ea-845f-91d30cf8fdf8.png)
-
-## snapshots for results/logs 
-
-***report :***  
-
-![image](https://user-images.githubusercontent.com/50976445/87890310-8e3d1a00-ca68-11ea-9b4e-187e3a388e98.png)  
-
-***log :***  
-
-![image](https://user-images.githubusercontent.com/50976445/87890215-0f47e180-ca68-11ea-9641-59924cd18722.png)  
-
-***log  with screenshot :***   
-
-![image](https://user-images.githubusercontent.com/50976445/87890249-41594380-ca68-11ea-851c-ff53cc7cef61.png)
-
-
 # install and configure mobile automation on Mac OS
 
 ## Installation of Appium and Robot Framework
@@ -196,20 +107,130 @@ open -a Xcode WebDriverAgent.xcodeproj
 
 **set Xcode for building iPhone (set iPhone to run automated test via Appium)**  
 
+Navigate to Xcode and open the target WebDriverAgentLib and sign this with your Developer Account. Do the same for WebDriverAgentRunner. Build the project to validate if the signing was successful.
+
+***WebDriverAgentLib***  
+
+![image](https://user-images.githubusercontent.com/50976445/87915241-73889680-caa4-11ea-8d4f-6c81c11df084.png)  
 
 
-  
-  
+***WebDriverAgentRunner***  
+
+![image](https://user-images.githubusercontent.com/50976445/87915461-ceba8900-caa4-11ea-95a1-f4c6ec7c16a0.png)  
 
 
+There might be an error in Provisioning Profile & Signing Certificate. 
+***hack to resolve the error***    
+```
+click on Build Settings
+change the Product Bundle Identifier from it’s default to any other name
+go back to General, the errors in the previous step should now be resolved
+```
+
+![image](https://user-images.githubusercontent.com/50976445/87915854-4092d280-caa5-11ea-970a-2cd4e9c07b82.png)  
 
 
+**With all the steps completed, build on any of the WebDriverAgentRunner, then the app should open in the simulator**  
+
+![image](https://user-images.githubusercontent.com/50976445/87916578-36250880-caa6-11ea-90df-cfe4d0b4cfe9.png)  
+
+**quick checks to see if the device is ready for testing**  
+```
+netstat -an | grep 4723     #check if the appium server is up and running
+appium-doctor               #check if all dependencies of appium are working fine
+```
+
+***good to go for appium robotframework automated tests***
 
 
+# appium-robotframework
+ appium-robotframework integration to test ios and andriod apps
+ 
+ ***ios test scenario :***  
+ ```
+ navigate to iPhone Settings app  
+ sign in to iPhone  
+ enter Apple ID  
+ cancel and return to Settings app  
+ perform verifications and take screenshots
+ ```
+ 
+ ***andriod test scenario :***  
+ ```
+ navigate to android Calculator app  
+ perform addition operation : 3 + 4 = 7
+ verfiy result as 7
+ perform verifications and take screenshots
+ ```
+ 
+## steps to execute the testSuite
+ 
+ Open Terminal and go to the directory where testScripts are located, then execute the command ->  
+ 
+ ***run ios test :***    
+ ```
+robot --outputdir ../../reports smokeTest.robot
+```
+***run andriod test :***  
+```
+robot --outputdir ../../reports smokeTest_android.robot
+```
+ 
+## project folder structure
 
+#### reports
 
+* location : ***reports***  
+* screenshots are saved as ***.png*** files  
+* html report is saved as ***report.html***  
+* detailed step by step log is saved as ***log.html***  
 
+#### settings
 
+* location : ***settings***
+* global varibales and libraries are defined here : ***settings/settings.robot***
+* resource files for the project are defined here : ***settings/resource.robot***
 
+#### testSuites
+
+* project keywords, locators and testScripts are defined here : ***testSuites***  
+
+#### keywords
+
+* Common keywords that can be reused in the testSuites : ***testSuites/Keywords/common_keywords.robot***  
+* application specific keywords : ***testSuites/Keywords/homepage_keywords.robot***  
+
+#### locators
+
+* locators for identifying the elements on ios are defined here : ***testSuites/locators/app_locators.robot***  
+
+#### testScripts
+
+* ios test script location : ***testSuites/testScripts/smokeTest.robot***  
+* andriod test script location : ***testSuites/testScripts/smokeTest_android.robot***  
+
+## snapshot for the project structure
+
+![image](https://user-images.githubusercontent.com/50976445/87889533-ae6ada00-ca64-11ea-9e1f-3ea47558631f.png)
+
+## snapshot of the test run
+
+![image](https://user-images.githubusercontent.com/50976445/87890066-58e3fc80-ca67-11ea-845f-91d30cf8fdf8.png)
+
+## snapshots for results/logs 
+
+***report :***  
+
+![image](https://user-images.githubusercontent.com/50976445/87890310-8e3d1a00-ca68-11ea-9b4e-187e3a388e98.png)  
+
+***log :***  
+
+![image](https://user-images.githubusercontent.com/50976445/87890215-0f47e180-ca68-11ea-9641-59924cd18722.png)  
+
+***log  with screenshot :***   
+
+![image](https://user-images.githubusercontent.com/50976445/87890249-41594380-ca68-11ea-851c-ff53cc7cef61.png)  
+
+***end of the document***
 
 
