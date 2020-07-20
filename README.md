@@ -64,7 +64,7 @@ robot --outputdir ../../reports smokeTest_android.robot
 * ios test script location : ***testSuites/testScripts/smokeTest.robot***  
 * andriod test script location : ***testSuites/testScripts/smokeTest_android.robot***  
 
-## screenshot of the project structure
+## snapshot for the project structure
 
 ![image](https://user-images.githubusercontent.com/50976445/87889533-ae6ada00-ca64-11ea-9e1f-3ea47558631f.png)
 
@@ -72,5 +72,17 @@ robot --outputdir ../../reports smokeTest_android.robot
 
 ![image](https://user-images.githubusercontent.com/50976445/87890066-58e3fc80-ca67-11ea-845f-91d30cf8fdf8.png)
 
+## snapshots for results/logs 
 
- 
+***report :***  
+
+![image](https://user-images.githubusercontent.com/50976445/87890310-8e3d1a00-ca68-11ea-9b4e-187e3a388e98.png)  
+
+***log :***  
+
+![image](https://user-images.githubusercontent.com/50976445/87890215-0f47e180-ca68-11ea-9641-59924cd18722.png)  
+
+***log  with screenshot :***   
+
+![image](https://user-images.githubusercontent.com/50976445/87890249-41594380-ca68-11ea-851c-ff53cc7cef61.png)
+
