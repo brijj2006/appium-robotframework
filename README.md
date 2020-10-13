@@ -7,7 +7,7 @@ The installation of Appium and Robot Framework can be done using the terminal of
 ***Pre-requisites***  
 To install Appium and RobotFramework, following packages should be installed :  
 ```
-Homebrew
+Homebrew                 #https://brew.sh/
 Node.js
 Java Development Kit
 Phyton 3  
